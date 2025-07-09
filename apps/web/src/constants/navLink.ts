@@ -1,18 +1,18 @@
 export const NAV_LINKS = [
   {
     label: '文章',
-    href: '/zh/1'
+    href: '/articles'
   },
   {
     label: '留言',
-    href: '/zh/2'
+    href: '/comments'
   },
   {
     label: '项目',
-    href: '/zh/3'
+    href: '/projects'
   },
   {
     label: '关于',
-    href: '/zh/4'
+    href: '/about'
   },
 ]

@@ -1,2 +1,6 @@
 @import "tailwindcss";
-@import "./preset.css";
+
+canvas {
+    z-index: -1 !important;
+    pointer-events: none !important;
+}

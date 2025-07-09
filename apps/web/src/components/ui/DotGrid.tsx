@@ -296,7 +296,7 @@ const DotGrid: React.FC<DotGridProps> = ({
       <div ref={wrapperRef} className="w-full h-full relative">
         <canvas
           ref={canvasRef}
-          className="absolute inset-0 w-full h-full pointer-events-none"
+          className="absolute inset-0 w-full h-full"
         />
       </div>
     </section>
