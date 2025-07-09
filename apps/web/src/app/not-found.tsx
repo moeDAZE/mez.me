@@ -2,7 +2,7 @@
 
 import MainLayout from '@/components/main-layout'
 import GoToHome from '@/components/go-to-home'
-import CircularText from '@/components/ui/CircularText'
+import CircularText from '@/components/ui/TextCircular'
 import Link from 'next/link'
 
 const NotFound = () => {
