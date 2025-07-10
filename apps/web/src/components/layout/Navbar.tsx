@@ -12,16 +12,16 @@ const Navbar = () => {
           const isActive = link.href === pathname
 
           return (
-            <li key={link.label} className='mx-4 relative flex h-[60px] items-center justify-center text-gray-500 hover:text-gray-900'>
+            <li
+              key={link.label}
+              className={`px-0 relative flex h-[60px] items-center justify-center text-gray-500 hover:text-gray-900 transition-colors duration-200 ${isActive ? 'active-glow' : ''}`}
+            >
               <Link
                 href={link.href}
+                className="inline-block px-4 py-4 relative z-10"
               >
                 {link.label}
               </Link>
-              {isActive && (
-                <>
-                </>
-              )}
             </li>
           )
         })}

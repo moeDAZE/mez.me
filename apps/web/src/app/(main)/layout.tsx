@@ -1,4 +1,3 @@
-import MainLayout from '@/components/main-layout'
 import React from 'react'
 
 type LayoutProps = {
@@ -8,7 +7,7 @@ type LayoutProps = {
 const Layout = (props: LayoutProps) => {
   const { children } = props
   return (
-    <MainLayout>{children}</MainLayout>
+    <section>{children}</section>
   )
 }
 

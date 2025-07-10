@@ -1,6 +1,49 @@
 @import "tailwindcss";
 
 canvas {
-    z-index: -1 !important;
-    pointer-events: none !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+}
+
+li.active-glow {
+  position: relative;
+}
+
+li.active-glow::after {
+  content: '';
+  position: absolute;
+  left: 16px;
+  /* 与文字左右间距对齐 */
+  right: 16px;
+  bottom: 8px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #c4b5fd 0%, #fca5a5 100%);
+  box-shadow: 0 2px 8px 0 rgba(59, 130, 246, 0.15);
+  z-index: 1;
+  transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
+}
+
+li.active-glow>a {
+  color: #082f49 !important;
+  font-weight: 600;
+  background: none;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 60s linear infinite;
+}
+
+.group:hover .animate-spin-slow {
+  animation-play-state: paused !important;
 }

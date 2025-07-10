@@ -2,6 +2,7 @@
 import React from 'react'
 import '@/styles/global.css'
 import DotGrid from '@/components/ui/DotGrid'
+import MainLayout from '@/components/main-layout'
 
 type LayoutProps = {
   children: React.ReactNode
@@ -12,7 +13,7 @@ const Layout = (props: LayoutProps) => {
   return (
     <html>
       <body className='bg-[#E8E8E8]'>
-          <div className='w-full h-full -z-10 fixed'>
+        <div className='w-full h-full -z-10 fixed'>
           <DotGrid
             dotSize={2}
             gap={50}
@@ -24,8 +25,8 @@ const Layout = (props: LayoutProps) => {
             resistance={750}
             returnDuration={2}
           />
-          </div>
-        {children}
+        </div>
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   )
