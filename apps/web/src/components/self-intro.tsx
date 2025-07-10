@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const SelfIntro = () => {
   return (
-    <div className='flex justify-between gap-8'>
+    <div className='flex flex-col sm:flex-row justify-between gap-8'>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col flex-wrap gap-2 font-bold text-2xl text-gray-700'>
             <div>欢迎来到我的主页 😅</div>
